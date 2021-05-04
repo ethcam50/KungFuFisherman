@@ -1,0 +1,5 @@
+[gd_scene format=2]
+
+[node name="SnowAssetPreview" type="Node"]
+
+[node name="Mountains" type="Node" parent="."]

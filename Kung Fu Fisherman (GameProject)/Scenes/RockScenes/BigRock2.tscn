@@ -3,7 +3,7 @@
 [ext_resource path="res://Assets/Levels/ForestAssets/Rocks/BigRock2.fbx" type="PackedScene" id=1]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 7.4346, 1, 5.43576 )
+extents = Vector3( 7.4346, 4.65454, 6.08598 )
 
 [node name="BigRock2" instance=ExtResource( 1 )]
 
@@ -13,5 +13,5 @@ transform = Transform( 218.849, 0, 0, 0, -2.60889e-05, 218.849, 0, -218.849, -2.
 [node name="StaticBody" type="StaticBody" parent="." index="1"]
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.07395, 0, -2.48052 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.07395, 3.79823, -0.596461 )
 shape = SubResource( 1 )
