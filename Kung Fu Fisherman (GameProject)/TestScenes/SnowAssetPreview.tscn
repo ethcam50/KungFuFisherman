@@ -1,5 +1,29 @@
-[gd_scene format=2]
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Levels/Snow/WinterTree1.glb" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Levels/Snow/WinterTree2.glb" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Levels/Snow/WinterTree3.glb" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Levels/Snow/WinterTree4.glb" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Levels/Snow/WinterTree5.glb" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Levels/Snow/WinterTree6.glb" type="PackedScene" id=6]
 
 [node name="SnowAssetPreview" type="Node"]
 
-[node name="Mountains" type="Node" parent="."]
+[node name="Trees" type="Node" parent="."]
+
+[node name="WinterTree1" parent="Trees" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16 )
+
+[node name="WinterTree2" parent="Trees" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.1588 )
+
+[node name="WinterTree3" parent="Trees" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.2929 )
+
+[node name="WinterTree4" parent="Trees" instance=ExtResource( 4 )]
+
+[node name="WinterTree5" parent="Trees" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.89864 )
+
+[node name="WinterTree6" parent="Trees" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12.4084 )
