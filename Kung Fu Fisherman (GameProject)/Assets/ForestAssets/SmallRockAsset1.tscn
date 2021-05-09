@@ -14,4 +14,5 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.988421, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.273968, 0.428519, -0.239008 )
+visible = false
 shape = SubResource( 1 )

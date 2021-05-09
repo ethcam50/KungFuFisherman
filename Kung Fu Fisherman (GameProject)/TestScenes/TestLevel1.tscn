@@ -1,0 +1,146 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Assets/ForestAssets/BigRockAsset3.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/ForestAssets/BigRockAsset2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/ForestAssets/BigRockAsset4.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/ForestAssets/OakTreeAsset1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/ForestAssets/OakTreeAsset2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/ForestAssets/BigRockAsset1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/ForestAssets/SpruceTreeAsset2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/ForestAssets/SpruceTreeAsset1.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/ForestAssets/RockAsset1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/ForestAssets/OakTreeAsset3.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Assets/ForestAssets/RockAsset2.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Assets/ForestAssets/SmallRockAsset2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Assets/ForestAssets/RockAsset4.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Assets/ForestAssets/SmallRockAsset1.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Assets/ForestAssets/RockAsset3.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Assets/ForestAssets/SmallRockAsset3.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Assets/ForestAssets/SmallRockAsset4.tscn" type="PackedScene" id=17]
+
+[sub_resource type="QuadMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.541176, 0.847059, 0.207843, 1 )
+roughness = 0.5
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 10, 0.001, 10 )
+
+[node name="TestLevel1" type="Node"]
+
+[node name="BasicGround" type="Spatial" parent="."]
+
+[node name="BasicGroundMesh" type="MeshInstance" parent="BasicGround"]
+transform = Transform( 100, 0, 0, 0, -4.37114e-06, 1, 0, -100, -4.37114e-08, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="BasicGround"]
+
+[node name="CollisionShape" type="CollisionShape" parent="BasicGround/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="BackgroundRocks" type="Node" parent="."]
+
+[node name="BigRock1_1" parent="BackgroundRocks" instance=ExtResource( 6 )]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 55.1793 )
+
+[node name="BigRock1_2" parent="BackgroundRocks" instance=ExtResource( 6 )]
+transform = Transform( -0.776457, 0, -2.89778, 0, 3, 0, 2.89778, 0, -0.776457, 48.6833, 0, -1.83812 )
+
+[node name="BigRock1_3" parent="BackgroundRocks" instance=ExtResource( 6 )]
+transform = Transform( 0.588968, 0, -2.94162, 0, 3, 0, 2.94162, 0, 0.588968, -44.7983, 0, -30.6833 )
+
+[node name="BigRock2_1" parent="BackgroundRocks" instance=ExtResource( 2 )]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -21.59, 0, 53.781 )
+
+[node name="BigRock2_2" parent="BackgroundRocks" instance=ExtResource( 2 )]
+transform = Transform( 2.976, 0, 0.378753, 0, 3, 0, -0.378753, 0, 2.976, 26.5091, 0, 57.307 )
+
+[node name="BigRock3_1" parent="BackgroundRocks" instance=ExtResource( 1 )]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -64.114, 0, 23.4894 )
+
+[node name="BigRock3_4" parent="BackgroundRocks" instance=ExtResource( 1 )]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 45.0878, 0, -32.4546 )
+
+[node name="BigRock3_3" parent="BackgroundRocks" instance=ExtResource( 1 )]
+transform = Transform( -1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 45.6419, 0, 26.05 )
+
+[node name="BigRock3_2" parent="BackgroundRocks" instance=ExtResource( 1 )]
+transform = Transform( 0.865742, 0, -2.87237, 0, 3, 0, 2.87237, 0, 0.865742, 8.04985, 0, -61.6894 )
+
+[node name="BigRock4_1" parent="BackgroundRocks" instance=ExtResource( 3 )]
+transform = Transform( 2.59808, 0, -1.5, 0, 3, 0, 1.5, 0, 2.59808, -27.4198, 0, -52.8124 )
+
+[node name="BigRock4_2" parent="BackgroundRocks" instance=ExtResource( 3 )]
+transform = Transform( -0.599079, 0, -2.93958, 0, 3, 0, 2.93958, 0, -0.599079, -51.6541, 4, -7.36398 )
+
+[node name="Trees" type="Node" parent="."]
+
+[node name="OakTree1_1" parent="Trees" instance=ExtResource( 4 )]
+transform = Transform( -0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 21.2744, 0, 8.56232 )
+
+[node name="OakTree1_2" parent="Trees" instance=ExtResource( 4 )]
+transform = Transform( -0.685577, 0, 0.728, 0, 1, 0, -0.728, 0, -0.685577, -24.6735, 0, -18.403 )
+
+[node name="OakTree1_3" parent="Trees" instance=ExtResource( 4 )]
+transform = Transform( -0.0999622, 0, 0.994991, 0, 1, 0, -0.994991, 0, -0.0999622, -7.07959, 0, 28.1261 )
+
+[node name="OakTree2_1" parent="Trees" instance=ExtResource( 5 )]
+transform = Transform( 0.967471, 0, -0.252981, 0, 1, 0, 0.252981, 0, 0.967471, -17.6223, 0, 7.57709 )
+
+[node name="OakTree2_2" parent="Trees" instance=ExtResource( 5 )]
+transform = Transform( -0.25158, 0, -0.967837, 0, 1, 0, 0.967837, 0, -0.25158, -8.9648, 0, -21.9344 )
+
+[node name="OakTree3_1" parent="Trees" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5697, 0, -28.4031 )
+
+[node name="OakTree3_2" parent="Trees" instance=ExtResource( 10 )]
+transform = Transform( 0.6297, 0, 0.776838, 0, 1, 0, -0.776838, 0, 0.6297, 21.0043, 0, 24.0876 )
+
+[node name="SpruceTree1_1" parent="Trees" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.5337, 0, -10.0821 )
+
+[node name="SpruceTree1_2" parent="Trees" instance=ExtResource( 8 )]
+transform = Transform( 0.799842, 0, -0.600211, 0, 1, 0, 0.600211, 0, 0.799842, -15.8977, 0, -29.2085 )
+
+[node name="SpruceTree1_3" parent="Trees" instance=ExtResource( 8 )]
+transform = Transform( 0.999896, 0, -0.0144508, 0, 1, 0, 0.0144508, 0, 0.999896, -4.93908, 0, 4.41488 )
+
+[node name="SpruceTree2_1" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 0.927308, 0, -0.374299, 0, 1, 0, 0.374299, 0, 0.927308, 4.05519, 0, -15.1393 )
+
+[node name="SpruceTree2_2" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 0.927308, 0, -0.374299, 0, 1, 0, 0.374299, 0, 0.927308, 12.7576, 0, 29.6119 )
+
+[node name="SpruceTree2_3" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 0.927308, 0, -0.374299, 0, 1, 0, 0.374299, 0, 0.927308, -26.0793, 0, 23.8975 )
+
+[node name="RegularRocks" type="Node" parent="."]
+
+[node name="Rock1_1" parent="RegularRocks" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25385, 0, 17.4303 )
+
+[node name="Rock2_1" parent="RegularRocks" instance=ExtResource( 11 )]
+transform = Transform( 0.853932, 0, -0.520384, 0, 1, 0, 0.520384, 0, 0.853932, -21.2343, 0, -9.07557 )
+
+[node name="Rock3_1" parent="RegularRocks" instance=ExtResource( 15 )]
+transform = Transform( 0.901228, 0, 0.433345, 0, 1, 0, -0.433345, 0, 0.901228, 13.7852, 0, -16.6711 )
+
+[node name="Rock4_1" parent="RegularRocks" instance=ExtResource( 13 )]
+transform = Transform( 0.873194, 0, 0.487372, 0, 1, 0, -0.487372, 0, 0.873194, -14.8722, 0, 20.9593 )
+
+[node name="SmallRocks" type="Node" parent="."]
+
+[node name="SmallRock1_1" parent="SmallRocks" instance=ExtResource( 14 )]
+transform = Transform( 0.348482, 0, -0.358553, 0, 0.5, 0, 0.358553, 0, 0.348482, 25.7278, 0, 0 )
+
+[node name="SmallRock2_1" parent="SmallRocks" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27377, 0, 5.35268 )
+
+[node name="SmallRock3_1" parent="SmallRocks" instance=ExtResource( 16 )]
+transform = Transform( 0.671358, 0, -0.741133, 0, 1, 0, 0.741133, 0, 0.671358, -11.0653, 0, -21.3498 )
+
+[node name="SmallRock4_1" parent="SmallRocks" instance=ExtResource( 17 )]
+transform = Transform( 0.437383, 0, -0.899276, 0, 1, 0, 0.899276, 0, 0.437383, -8.45931, 0, -8.48542 )
