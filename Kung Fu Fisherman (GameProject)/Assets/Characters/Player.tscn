@@ -16,3 +16,9 @@ shape = SubResource( 1 )
 
 [node name="TestCharacter" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.48112, 0 )
+
+[node name="Pivot" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="Pivot"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.878799, 2.93715, 5 )
+fov = 62.9185
