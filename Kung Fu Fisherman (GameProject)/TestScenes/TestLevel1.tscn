@@ -1,11 +1,7 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=18 format=2]
 
-[ext_resource path="res://Assets/ForestAssets/BigRockAsset3.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Assets/ForestAssets/BigRockAsset2.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/ForestAssets/BigRockAsset4.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/ForestAssets/OakTreeAsset1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/ForestAssets/OakTreeAsset2.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Assets/ForestAssets/BigRockAsset1.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/ForestAssets/SpruceTreeAsset2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Assets/ForestAssets/SpruceTreeAsset1.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/ForestAssets/RockAsset1.tscn" type="PackedScene" id=9]
@@ -43,39 +39,6 @@ material/0 = SubResource( 2 )
 shape = SubResource( 3 )
 
 [node name="BackgroundRocks" type="Node" parent="."]
-
-[node name="BigRock1_1" parent="BackgroundRocks" instance=ExtResource( 6 )]
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 55.1793 )
-
-[node name="BigRock1_2" parent="BackgroundRocks" instance=ExtResource( 6 )]
-transform = Transform( -0.776457, 0, -2.89778, 0, 3, 0, 2.89778, 0, -0.776457, 48.6833, 0, -1.83812 )
-
-[node name="BigRock1_3" parent="BackgroundRocks" instance=ExtResource( 6 )]
-transform = Transform( 0.588968, 0, -2.94162, 0, 3, 0, 2.94162, 0, 0.588968, -44.7983, 0, -30.6833 )
-
-[node name="BigRock2_1" parent="BackgroundRocks" instance=ExtResource( 2 )]
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -21.59, 0, 53.781 )
-
-[node name="BigRock2_2" parent="BackgroundRocks" instance=ExtResource( 2 )]
-transform = Transform( 2.976, 0, 0.378753, 0, 3, 0, -0.378753, 0, 2.976, 26.5091, 0, 57.307 )
-
-[node name="BigRock3_1" parent="BackgroundRocks" instance=ExtResource( 1 )]
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -64.114, 0, 23.4894 )
-
-[node name="BigRock3_4" parent="BackgroundRocks" instance=ExtResource( 1 )]
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 45.0878, 0, -32.4546 )
-
-[node name="BigRock3_3" parent="BackgroundRocks" instance=ExtResource( 1 )]
-transform = Transform( -1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 45.6419, 0, 26.05 )
-
-[node name="BigRock3_2" parent="BackgroundRocks" instance=ExtResource( 1 )]
-transform = Transform( 0.865742, 0, -2.87237, 0, 3, 0, 2.87237, 0, 0.865742, 8.04985, 0, -61.6894 )
-
-[node name="BigRock4_1" parent="BackgroundRocks" instance=ExtResource( 3 )]
-transform = Transform( 2.59808, 0, -1.5, 0, 3, 0, 1.5, 0, 2.59808, -27.4198, 0, -52.8124 )
-
-[node name="BigRock4_2" parent="BackgroundRocks" instance=ExtResource( 3 )]
-transform = Transform( -0.599079, 0, -2.93958, 0, 3, 0, 2.93958, 0, -0.599079, -51.6541, 4, -7.36398 )
 
 [node name="Trees" type="Node" parent="."]
 
