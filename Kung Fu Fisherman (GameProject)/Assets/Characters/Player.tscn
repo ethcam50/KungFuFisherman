@@ -1,24 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Models/Characters/TestCharacter.glb" type="PackedScene" id=1]
+[ext_resource path="res://Characters/CharacterBlank.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
-
-[sub_resource type="CylinderShape" id=1]
-radius = 0.569465
-height = 3.24227
 
 [node name="Player" type="KinematicBody"]
 script = ExtResource( 2 )
-
-[node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60761, 0 )
-shape = SubResource( 1 )
-
-[node name="TestCharacter" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.48112, 0 )
 
 [node name="Pivot" type="Spatial" parent="."]
 
 [node name="Camera" type="Camera" parent="Pivot"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.878799, 2.93715, 5 )
 fov = 62.9185
+
+[node name="TestCharacter" parent="." instance=ExtResource( 1 )]
