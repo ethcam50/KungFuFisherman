@@ -50,7 +50,7 @@ func _process(delta):
 		player.y -= gravity + delta
 		
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		player.y = jump 
+		player.y = -jump 
 		
 	move_and_slide(player, Vector3.UP)
 		
