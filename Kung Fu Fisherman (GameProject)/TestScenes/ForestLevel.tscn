@@ -95,7 +95,7 @@ transform = Transform( -0.979879, 0, -0.19959, 0, 1, 0, 0.19959, 0, -0.979879, -
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2913, 0, 0 )
 
 [node name="OakTree3_2" parent="Trees" instance=ExtResource( 8 )]
-transform = Transform( 0.375691, 0, -0.926745, 0, 1, 0, 0.926745, 0, 0.375691, 10.7984, 0, -18.1279 )
+transform = Transform( 0.375691, 0, -0.926745, 0, 1, 0, 0.926745, 0, 0.375691, 17.5954, 0, -21.0088 )
 
 [node name="OakTree3_3" parent="Trees" instance=ExtResource( 8 )]
 transform = Transform( -0.60035, 0, -0.799737, 0, 1, 0, 0.799737, 0, -0.60035, -11.9577, 0, 8.68236 )
