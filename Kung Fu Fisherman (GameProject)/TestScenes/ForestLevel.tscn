@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Assets/ForestAssets/RockAsset1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/ForestAssets/SmallRockAsset3.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Assets/ForestAssets/BigRockAsset4.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Assets/ForestAssets/BigRockAsset3.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Fish1.tscn" type="PackedScene" id=14]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -148,3 +149,6 @@ transform = Transform( -0.407629, 0, 3.97918, 0, 4, 0, -3.97918, 0, -0.407629, 7
 transform = Transform( 3.14796, 0, -2.46787, 0, 4, 0, 2.46787, 0, 3.14796, 57.391, 6.26665, 26.1323 )
 
 [node name="Player" parent="." instance=ExtResource( 11 )]
+
+[node name="Fish1" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34.5531, 0, -9.00382 )
