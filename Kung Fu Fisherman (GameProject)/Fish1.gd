@@ -16,6 +16,8 @@ func _physics_process(delta):
 		rotation.z = 0
 		move_and_slide(facing * move_speed * delta, Vector3.UP)
 		
+	if $RayCast.is_colliding():
+		player_follow = false
 		
 
 func _on_Area_body_entered(body):
@@ -25,8 +27,9 @@ func _on_Area_body_entered(body):
 		player = body 
 
 
+
 func _on_Area_body_exited(body):
 	if body.name == "Player":
 		$RayCast.set_enabled(false)
 		player_follow = false
-	pass 
+
