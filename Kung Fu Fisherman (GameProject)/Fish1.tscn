@@ -5,10 +5,10 @@
 [sub_resource type="CapsuleMesh" id=1]
 
 [sub_resource type="CylinderShape" id=2]
-height = 6.0
+height = 2.8
 
 [sub_resource type="CylinderShape" id=3]
-radius = 27.0
+radius = 23.0
 height = 4.0
 
 [node name="Fish1" type="KinematicBody"]
@@ -20,7 +20,7 @@ mesh = SubResource( 1 )
 material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 1.06581e-14, 0, -1.06581e-14, 1, 0, 3, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 1.06581e-14, 0, -1.06581e-14, 1, 0, 1.4, 0 )
 shape = SubResource( 2 )
 
 [node name="Area" type="Area" parent="."]
@@ -33,7 +33,7 @@ shape = SubResource( 3 )
 [node name="RayCast" type="RayCast" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 enabled = true
-cast_to = Vector3( 0, 0, -5 )
+cast_to = Vector3( 0, 0, -2 )
 
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
 [connection signal="body_exited" from="Area" to="." method="_on_Area_body_exited"]
