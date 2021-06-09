@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Level1Ground.glb-dbf9b9115ef7fefbf39de41c4c698e6b.scn"
+path="res://.import/BasicGrassCurved.glb-ab131c1df2343decef4c21d1dc08e4b0.scn"
 
 [deps]
 
-source_file="res://Models/Levels/Forest/Level1Ground.glb"
-dest_files=[ "res://.import/Level1Ground.glb-dbf9b9115ef7fefbf39de41c4c698e6b.scn" ]
+source_file="res://Assets/LevelBuildingAssets/BasicGrassCurved.glb"
+dest_files=[ "res://.import/BasicGrassCurved.glb-ab131c1df2343decef4c21d1dc08e4b0.scn" ]
 
 [params]
 
