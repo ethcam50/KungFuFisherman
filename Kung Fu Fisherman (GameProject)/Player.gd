@@ -56,3 +56,13 @@ func _physics_process(delta):
 	velocity = velocity.linear_interpolate(direction * speed, acceleration * delta)
 	move_and_slide(velocity, Vector3.UP)
 	
+	print($AttackingArm/AACollisionShape.disabled)
+	if Input.is_action_just_pressed("mouse1"):
+		$AttackingArm/AACollisionShape.disabled = false
+		var bodies = $AttackingArm.get_overlapping_bodies()
+		#hit_enemy(bodies)  #Make a function
+		yield(get_tree().create_timer(1.0),"timeout")
+		$AttackingArm/AACollisionShape.disabled = true
+	
+
+	
